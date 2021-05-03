@@ -1,0 +1,25 @@
+#dice {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+}
+
+body {
+    background-color: sienna;
+}
+
+#btn {
+    cursor: pointer;
+    background-color: maroon;
+    margin-top: 2rem;
+    padding: 30px;
+    color: white;
+    display: block;
+    width: 256px;
+    font-size: 20px;
+    border: 0;
+}

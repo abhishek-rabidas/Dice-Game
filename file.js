@@ -3,7 +3,7 @@ function refresh() {
     let n = Math.floor(Math.random() * 6 + 1);
 
     let guess = document.getElementById('guess').value;
-       if (guess == "" || guess > 6) {
+       if (guess == "" || (guess > 6 || guess < 1)) {
         document.getElementById('result-text').innerText = "ENTER CORRECT GUESS NUMBER";
     } else {
         switch (n) {

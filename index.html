@@ -15,12 +15,19 @@
 <body>
 
     <h1>DICE GAME</h1>
+    <div id="control">
+        <span id="side-text">Enter your guess number (1-6): </span>
+        <input min="1" max="6" type="number" id="guess">
+    </div>
     <div id="dice">
-        <img src="dice1.png" id="dice-image">
+        <img src="https://cdn4.iconfinder.com/data/icons/3d_icons/512/dice.png" id="dice-image">
     </div>
     <center>
         <button id="btn" onclick="refresh()">ROLL</button>
     </center>
+    <div id="result">
+        <h2 id="result-text"></h2>
+    </div>
     <script src="file.js"></script>
 </body>
 

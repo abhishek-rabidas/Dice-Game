@@ -1,4 +1,5 @@
 #dice {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -22,4 +23,71 @@ body {
     width: 256px;
     font-size: 20px;
     border: 0;
+}
+
+#side-text {
+    color: white;
+}
+
+#control {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#guess {
+    outline: none;
+    padding: 10px;
+}
+
+#result {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    #dice-image {
+        width: 50%;
+    }
+    #btn {
+        width: 50%;
+    }
+}
+
+#btn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: rgb(114, 1, 1);
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
